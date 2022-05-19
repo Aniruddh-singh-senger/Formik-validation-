@@ -1,0 +1,514 @@
+// let a = 10;
+// let b = 20;
+// [a,b] = [b,a]
+// console.log(a,b)
+
+
+// important method check starting here
+
+// const people = [
+//   { name: 'Alice', age: 21 },
+//   { name: 'Max', age: 20 },
+//   { name: 'Jane', age: 20 },
+//   { name: 'Jayyee', age: 25 },
+// ];
+
+// // first method
+
+// let accr = {}
+// for (i=0; i < people.length; i++) {
+//       let key = people[i].age
+//     if (!accr[key]) {
+//       accr[key] = []
+//     }
+//      accr[key].push(people[i])
+// }
+// console.log(accr)
+
+// first method endhere
+
+// second method
+
+// let accr = {}
+// for(let array of people){
+//       let key = array.age
+//     if (!accr[key]) {
+//       accr[key] = []
+//     }
+//      accr[key].push(array)
+// }
+// console.log(accr)
+
+// second method endhere
+
+// third method
+
+// let accr = {}
+// people.map(acc =>{
+//      let key = acc.age
+//     if (!accr[key]) {
+//       accr[key] = []
+//     }
+//      accr[key].push(acc)
+// })
+// console.log(accr)
+
+// third method endhere
+
+// fourth method
+
+// function groupBy(objectArray, property) {
+//   return objectArray.reduce(function (acc, obj) {
+//     let key = obj[property]
+//     //  console.log(key)
+//     if (!acc[key]) {
+//       acc[key] = []
+//     }
+//      acc[key].push(obj)
+//     return acc
+//   }, {})
+// }
+
+// let groupedPeople = groupBy(people, 'age')
+// console.log(groupedPeople)
+
+// fourth method endhere
+
+
+// var data = [
+//   { name: 'Alice', age: 21 },
+//   { name: 'Max', age: 20 },
+//   { name: 'Jane', age: 20 }
+// ];
+// for(i=0;i<data.length;i++){
+// 	for(var x in data[i]){
+// 	    console.log(x + " => " + data[i][x]);
+// 	}
+// }
+
+// groupedPeople is:
+// {
+//   20: [
+//     { name: 'Max', age: 20 },
+//     { name: 'Jane', age: 20 }
+//   ],
+//   21: [{ name: 'Alice', age: 21 }]
+// }
+
+// important method check ending here
+
+// const myArray = ['a', 'b', 'a', 'b', 'c', 'e', 'e', 'c', 'd', 'd', 'd', 'd']
+// let myArrayWithNoDuplicates = myArray.reduce(function (previousValue, currentValue) {
+//   if (previousValue.indexOf(currentValue) === -1) {
+//     previousValue.push(currentValue)
+//   }
+//   return previousValue
+// }, [])
+
+// console.log(myArrayWithNoDuplicates)
+
+// const numbers = [-5, 6, 2, 0,];
+
+// const doubledPositiveNumbers = numbers.reduce((previousValue, currentValue) => {
+//   if (currentValue > 0) {
+//     const doubled = currentValue * 2;
+//     previousValue.push(doubled);
+//   }
+//   return previousValue;
+// }, []);
+
+// console.log(doubledPositiveNumbers); // [12, 4]
+
+// let flattened = [[0, 1], [2, 3], [4, 5]].reduce(
+//   function(previousValue, currentValue) {
+//       console.log(previousValue.concat(currentValue))
+//     return previousValue.concat(currentValue)
+//   },
+//   []
+// )
+// console.log(flattened)
+// flattened is [0, 1, 2, 3, 4, 5]
+
+
+
+// const letters = ['a', 'b', 'c'];
+
+// const alphaNumeric = letters.concat( [1 ,2, 3]);
+
+// console.log(alphaNumeric);
+// results in ['a', 'b', 'c', 1, 2, 3]
+
+// const person = {
+//   name: "Sarah",
+//   address: {
+//     number: 10,
+//     street: "Functional Street"
+//   }
+// }
+
+// const clonedPerson = { ...person }
+
+// clonedPerson.address.number = 15
+// console.log(clonedPerson.address.number) // 15
+// console.log(person.address.number) 
+
+// let a = [1, 2, 3, 4];
+// let b = ["ram", "shyam", "sita", "gita"]
+
+// let obj = {}
+
+// a.map((value,index)=>{
+// obj[value] = b[index]
+// return obj
+// })
+
+// obj['rahul'] = 'ramesh'
+
+// console.log(obj)
+
+// for(i=0; i<a.length; i++){
+//     let c = a[i]
+//   obj[c] =  b[i]
+// }
+//   console.log(obj)
+
+
+// let input =  [
+//          ["John", 12],
+//          ["Jack", 13],
+//          ["Matt", 14],
+//          ["Maxx", 15]
+//       ]
+
+// let obj = {}
+
+// input.map((value)=>{
+//     let a = value[0];
+//     let b = value[1];
+//     obj[a] = b
+//     return obj 
+// })
+
+// console.log("output :", obj)
+
+ // This is our array of Objects
+        //   var data = [
+        //         { id: 1, name: "a" },
+        //         { id: 2, name: "b" },
+        //         { id: 3, name: "c" },
+        //         { id: 4, name: "d" },
+        //         { id: 5, name: "e" },
+        //         { id: 6, name: "f" },
+        //     ];
+  
+        //     let idYouWant = 1;
+        //     let propertyYouWant = "name";
+  
+        //     let res = data.find((item) => {
+        //         return item.id == idYouWant;
+        //     });
+            
+        //     console.log( res[propertyYouWant])
+            
+//         var obj = { "1": 500, "2": 15, "5": 4, "4": 480, "10": 87 };
+     
+//     // Using Object.entries() function
+//     // to convert an Object {} to an
+//     // Array [] of key-value pairs
+//     var result = Object.entries(obj);
+   
+// const test = result.reduce((acc,value)=>{
+//     return acc.concat(value) 
+//  },[])
+      
+//         console.log(test)
+
+// let recipeMap = new Map([
+//   ['cucumber', 500],
+//   ['tomatoes', 350],
+//   ['onion',    50]
+// ]);
+
+// // iterate over keys (vegetables)
+// for (let vegetable of recipeMap.keys()) {
+//   console.log(vegetable); // cucumber, tomatoes, onion
+// }
+
+// // iterate over values (amounts)
+// for (let amount of recipeMap.values()) {
+//   alert(amount); // 500, 350, 50
+// }
+
+// // iterate over [key, value] entries
+// for (let entry of recipeMap) { // the same as of recipeMap.entries()
+//   alert(entry); // cucumber,500 (and so on)
+// }
+
+// recipeMap.forEach( (value, key, map) => {
+//   alert(`${key}: ${value}`); // cucumber: 500 etc
+// });
+
+const arr = [{id: 1, name: 'one'}, {id: 2, name: 'two'}, {id: 1, name: 'one'}]
+
+const ids = arr.map(o => o.id)
+
+const filtered = arr.filter(({id}, index) => !ids.includes(id, index + 1))
+
+console.log(filtered)
+
+
+// removes duplicates
+
+        // let books = [
+        //         { title: "C++", author: "Bjarne" },
+        //         { title: "Java", author: "James" },
+        //         { title: "Python", author: "Guido" },
+        //         { title: "Java", author: "James" },
+        //     ];
+              
+        //     jsonObject = books.map(JSON.stringify);
+
+        //     uniqueSet = [...new Set(jsonObject)];
+
+        //     uniqueArray = uniqueSet.map(JSON.parse);
+      
+        //     console.log(uniqueArray);
+        
+        
+        // let chars = ['A', 'B', 'A', 'C', 'B'];
+
+        // let uniqueChars = [...new Set(chars)];
+        
+    //     var arr = ["apple", "mango",
+    //     "apple", "orange", "mango", "mango"];
+ 
+    //     var unique = [];
+    //     arr.forEach(element => {
+    //         if (!unique.includes(element)) {
+    //             unique.push(element);
+    //         }
+    //     });
+ 
+    // console.log(unique);
+    
+    // var arr = ["apple", "mango",
+    //     "apple", "orange", "mango", "mango"];
+ 
+    //     var unique = [];
+    //     for(i=0; i < arr.length; i++){ 
+    //         if(unique.indexOf(arr[i]) === -1) { 
+    //             unique.push(arr[i]); 
+    //         } 
+    //     }
+    // console.log(unique);
+    
+// removes duplicates end
+
+ // arr = [1, 2, 3, 4, 5]
+
+// const test = arr.splice(0,2)
+
+// arr.splice(4,0, ...test)
+// console.log(arr)
+
+// var arr = [1,2,3,4,5,0,-1,-2,-3,-4];
+// function sortNumber(a, b) {
+//   return a - b;
+// }
+// console.log( arr.sort(sortNumber));
+
+
+// var arr = [1,2,3,4,5,0,-1,-2,-3,-4];
+
+// let newarr = []
+// let newarr2 = []
+// for(let array of arr){
+//     if(array>0){
+//         newarr.push(array)
+//     }
+//     if(array<=0){
+//         newarr2.push(array)
+//     }
+// }
+//  console.log(newarr2.reverse().concat(newarr))
+
+
+
+// var student = {
+// name : "David Rayy",
+// sclass : "VI",
+// rollno : 12 };
+
+// for(let object in student){
+//     console.log(object)
+//      console.log(student[object])
+// }
+
+    
+    // const o1 = { a: 1 };
+    // const o2 = { b: 2 };
+    // const o3 = { c: 3 };
+    
+    // const obj = Object.assign(o1, o2, o3);
+    // console.log(obj); 
+    // console.log(o1); 
+    
+//     const obj = { foo: 'bar', baz: 42 };
+// Object.entries(obj).forEach(([key, value]) => console.log(`${key}: ${value}`));
+
+//   let codes = {
+//   "49": "Germany",
+//   "41": "Switzerland",
+//   "44": "Great Britain",
+//   // ..,
+//   "1": "USA"
+// };
+
+// for (let code in codes) {
+//   console.log(code);
+// }
+
+// let codes = {
+//   "+49": "Germany",
+//   "+41": "Switzerland",
+//   "+44": "Great Britain",
+//   // ..,
+//   "+1": "USA"
+// };
+
+// for (let code in codes) {
+//   alert( +code ); // 49, 41, 44, 1
+// }
+
+
+// function makeUser(name, age) {
+//   return {
+//     name: name,
+//     age: age,
+//     // ...other properties
+//   };
+// }
+
+// let user = makeUser("John", 30);
+// alert(user.name); // John
+
+// let obj = {
+//   test: undefined,
+//   age:"anuj"
+// };
+
+// alert( obj.test); // it's undefined, so - no such property?
+
+// alert( "test" in obj ); // true, the property does exist!
+
+// imp
+//   function reorder(arr, index, n) {
+//         var temp = [...Array(n)];
+
+//         for (var i = 0; i < n; i++) temp[index[i]] = arr[i];
+ 
+//         // Copy temp[] to arr[]
+//         for (var i = 0; i < n; i++) {
+//           arr[i] = temp[i];
+//           index[i] = i;
+//         }
+//       }
+
+//       var arr = [50, 40, 70, 60, 90,100,78];
+//       var index = [3, 0, 4, 6, 2,1,5];
+//       var n = arr.length;
+
+//       reorder(arr, index, n);
+
+//       for (var i = 0; i < n; i++) document.write(arr[i] + " ");
+    
+      
+      
+      
+      // let obj = {
+//   test: undefined
+// };
+
+// if(!obj.test ){
+//     console.log(false)
+// }
+
+// // alert( obj.test ); // it's undefined, so - no such property?
+
+// alert( "test" in obj )
+
+// let user = {
+//   name: "John",
+//   age: 30
+// };
+
+// let clone = Object.assign({}, user);
+// console.log(clone)
+
+// let user = { name: "John" };
+
+// let permissions1 = { canView: true };
+// let permissions2 = { canEdit: true };
+
+// Object.assign(permissions1, permissions2,user);
+
+// console.log(permissions1)
+
+// let user = {
+//   name: "John"
+// };
+
+// let admin = user;
+// user=null
+
+// console.log(user)
+
+// let user = {
+//   name: "John",
+//   age: 30
+// };
+
+// user.sayHi = () => alert("Hello!");
+
+// user.sayHi(); // Hello!
+
+
+// let user = {
+//   name: "John",
+//   age: 30,
+
+//   sayHi() {
+//     alert( this.name ); // leads to an error
+//   }
+
+// };
+
+
+// let admin = user;
+// user = null; // overwrite to make things obvious
+
+// admin.sayHi();
+
+// let user = {
+//   firstName: "Ilya",
+//   sayHi() {
+//     let arrow = () => alert(this.firstName);
+//     arrow();
+//   }
+// };
+
+// user.sayHi(); // Ilya
+
+// let prices = {
+//   banana: 1,
+//   orange: 2,
+//   meat: 4,
+// };
+
+// const newarr = Object.keys(prices)
+// const newarr2 =Object.values(prices) 
+// const newarr3 = Object.entries(prices).map(entry => [entry[0], entry[1] * 2]
+// );
+
+// // const sec = Object.fromEntries(newarr)
+// console.log(newarr2)

@@ -512,3 +512,265 @@ console.log(filtered)
 
 // // const sec = Object.fromEntries(newarr)
 // console.log(newarr2)
+
+// 1) Write a JavaScript program to check two numbers and return true if one of the number is
+//   100 or if the sum of the two numbers is 100
+   
+//   const product = (a,b) => a === 100 || b===100 || (a+b) === 100
+   
+//   console.log(product(0,100))
+//   console.log(product(100,0))
+//   console.log(product(80,20))
+//   console.log(product(50,50))
+  
+//   2)  Write a JavaScript exercise to get the extension of a filename.
+
+// const product = (str) => str.slice(str.lastIndexOf('.'))
+
+// console.log(product('index.html'))
+// console.log(product('index.js'))
+// console.log(product('weboack.config.js'))
+
+// 3)Write a JavaScript program to replace every character in a given string with the character
+// following it in the alphabet
+
+// const product = (str) => {
+//   return  str.split('')
+//     .map(char => String.fromCharCode(char.charCodeAt(0)+1)).join('')}
+// console.log(product('abdz'))
+
+// 4) Write a JavaScript program to get the current date.
+// Expected Output : mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy
+
+// const date = new Date()
+// const days = date.getDate()
+// const month = date.getMonth()
+// const year = date.getFullYear()
+
+// console.log(`${days}/${month}/${year}`)
+
+// 5)Write a JavaScript program to create a new string adding "New!" in front of a given string. If the given string begins with "New!" already then return the original string.
+
+// const string = (str) => str.indexOf('New!') === 0 ? str : `New! ${str}`
+
+// console.log(string(' hello'))
+
+// 6)Write a JavaScript program to create a new string from a given string taking the last 3
+// characters and added at both the front and back. The string length must be 3 or more, if
+// not, the original string is returned.
+
+// const result = (str) => str.length < 3 ? str : str.slice(0,3) + str.slice(-3);
+// console.log(result('ankitpatidar'))
+
+// 7)Write a JavaScript program to extract the first half of a string of even length
+
+// const result = (str)=> str.slice(0,str.length/2);
+// console.log(result('ankitpatidar'))
+
+
+// 8)Write a JavaScript program to concatenate two strings except their first character.
+
+// const result = (str1 , str2)=> str1.slice(1) + str2.slice(1)
+// console.log(result('hello','world'))
+
+// 9)Given two values, write a JavaScript program to find out which one is nearest to 100
+
+// const result = (a,b) => (100 - a) < (100-b) ? a : b ; 
+// console.log(result(49,51))
+// console.log(result(121,151))
+
+// 10)Write a JavaScript program to check a given string contains 2 to 4 occurrences of a specified character.
+
+// const count = (str,char) => str.split('').filter(ch => ch === char ).length ; 
+// // console.log(count('ooooh','o'))
+
+// const result = (str,char)=> count(str,char) >=2 && count(str,char) <=4;
+
+// console.log(result('ooooh','o'))
+// console.log(result('oooh','o'))
+// console.log(result('oooooh','o'))
+
+// split String 
+
+// 1)
+// const names = 'Harry Trump ;Fred Barney; Helen Rigby ; Bill Abel ;Chris Hand '
+// console.log(names)
+
+// const nameList = names.split(';')
+// console.log(nameList)
+
+// 2)
+// const myString = 'Hello World. How are you doing?'
+// const splits = myString.split(' ', 3)
+// console.log(splits)
+
+// 3)
+// const myString = 'Hello 1 word. Sentence number 2'
+// const splits = myString.split(/(\d)/)
+
+// console.log(splits)
+
+// Part 03
+
+// Exercise 1:
+// Write a JavaScript program to find the number of even digits in a an array of integers
+
+// const totalEven = (arr)=> arr.filter(item => item%2 == 0).length
+// console.log(totalEven([2,4,6,7,8,9]))
+
+// const totalEvenshowInArray = (arr)=> arr.filter(item => item%2 == 0)
+// console.log(totalEvenshowInArray([2,4,6,7,8,9]))
+
+
+// Exercise 2:
+// Write a JavaScript program to find the number of even values up to a given number
+
+// const totalEven = (arr)=> arr.filter(item => item%2 == 0).length
+
+//  const arrnew = []
+// const arry = (arr)=>{
+   
+    
+//     for(i=1; i<=arr; i++){
+//         arrnew.push(i)
+//     }
+//      return arrnew
+// }
+// console.log(arry(8))
+// console.log(totalEven(arry(8)))
+
+
+// Exercise 3:
+// Write a JavaScript program to check whether a given array of integers is sorted in ascending
+// order
+
+// const isAscending = (arr)=>{
+//     for(i=0; i<arr.length; i++){
+//         if(arr[i+1]<arr[i]) return false;
+//     } return true;
+// }
+// console.log(isAscending([1,2,3,4]))
+
+// let arr = [1,2,3,4,5];
+// const func = (arr) => {
+// for(i=0; arr.length; i++)
+// {
+//     for(j=0; j<=i; j++){
+//         if(arr[i]<arr[j])return false;
+//     }
+//     if(i==arr.length)return true;
+// }
+// }
+// console.log(func(arr))
+
+// Exercise 4:
+// Write a JavaScript program to get the largest even number from an array of integers
+
+// const largestEven = (arr)=>{
+// //   const test =  Math.max(...arr)
+//  const test =  Math.max(...arr.filter(num  => num%2 == 0))
+//     console.log(test)
+// }
+
+// largestEven([1,2,34,4,5,6,75,98])
+
+
+// Exercise 5:
+// Write a JavaScript program to replace the first digit in a string (should contain at least one
+// digit) with a $ character.
+
+
+// const result = (str)=> str.replace(/[0-9]/,'$')
+
+// console.log(result('abch8afd'))
+// console.log(result('abc123ddf'))
+
+// Part 04
+
+// Exercise 1:
+// Given a year, report if it is a leap year.
+
+// const isLeapYear = (year)=> year%4 === 0 ;
+// console.log(isLeapYear(2014))
+// console.log(isLeapYear(2015))
+// console.log(isLeapYear(2016))
+// console.log(isLeapYear(2017))
+// console.log(isLeapYear(2018))
+// console.log(isLeapYear(2019))
+// console.log(isLeapYear(2020))
+
+// Exercise 2:
+// Write a JavaScript program to compare two objects to determine if the first one contains
+// the same properties as the second one (which may also have additional properties). For
+// example, objA and objB are equal (but not equal to objC).
+// const objA = { a: 1, b: 1, c: 1 };
+// const objB = { a: 1, b: 1, c: 1 };
+// const objC = { a: 1, b: 1, d: 1 };
+
+// const result = (a,b)=> Object.keys(a).every(keys => b[keys])
+// console.log(result(objA,objB))
+
+// Exercise 3:
+// Write a JavaScript program to convert a comma-separated values (CSV) string to a 2D array.
+// A new line indicates a new row in the array. Example input:
+
+// const string = `abc,def,ghi
+// jkl,mno,pqr
+// stu,vwx,yza`
+                 
+// const result = (str)=> str.split('\n').map(ce=> ce.split(','))
+// console.log(result(string))
+
+// Exercise 4:
+// Write a JavaScript program to generate a random hexadecimal color code.
+
+// const hexacode =()=> Math.floor(Math.random()*16).toString(16)
+
+// const array = Array.from({length:6})
+// // console.log(array)
+
+// const gethexa = ()=> '#' + array.map(hexacode).join('')
+// console.log(gethexa())
+
+// Exercise 5:
+// Write a JavaScript function that returns true if the provided predicate function returns true
+// for all elements in a collection, false otherwise.
+
+
+// every method 
+// const array = [3,4,5,6]
+
+// const newarr = array.every(ce=> ce>2 && true)
+
+// console.log(newarr)
+
+
+// Part 05
+// Exercise 1:
+// Write a JavaScript function that returns a passed string with letters in alphabetical order.
+// Example string: 'webmaster'
+// Expected Output: 'abeemrstw'
+// Exercise 2:
+// Write a JavaScript function that accepts a string as a parameter and counts the number of
+// vowels within the string.
+// Exercise 3:
+// Write a JavaScript function to convert an amount to coins.
+// Example input: 46 and possible coins 25, 10, 5, 2, 1
+// Output: 25, 10, 10, 1
+// Exercise 4:
+// Write a JavaScript function to extract unique characters from a string.
+// Exercise 5:
+// Write a JavaScript function to find the first not repeated character
+// Example string: 'abacddbec'
+// Expected output: 'e'
+
+
+
+
+
+
+
+
+
+
+

@@ -248,13 +248,13 @@
 //   alert(`${key}: ${value}`); // cucumber: 500 etc
 // });
 
-const arr = [{id: 1, name: 'one'}, {id: 2, name: 'two'}, {id: 1, name: 'one'}]
+// const arr = [{id: 1, name: 'one'}, {id: 2, name: 'two'}, {id: 1, name: 'one'}]
 
-const ids = arr.map(o => o.id)
+// const ids = arr.map(o => o.id)
 
-const filtered = arr.filter(({id}, index) => !ids.includes(id, index + 1))
+// const filtered = arr.filter(({id}, index) => !ids.includes(id, index + 1))
 
-console.log(filtered)
+// console.log(filtered)
 
 
 // removes duplicates
@@ -750,30 +750,152 @@ console.log(filtered)
 // Write a JavaScript function that returns a passed string with letters in alphabetical order.
 // Example string: 'webmaster'
 // Expected Output: 'abeemrstw'
+
+// const aray = (str) => str.split('').sort((a,b)=> a > b ? 1 :  -1).join('');
+
+// console.log(aray('webmaster'))
+// console.log(aray('javascript'))
+
+
 // Exercise 2:
 // Write a JavaScript function that accepts a string as a parameter and counts the number of
 // vowels within the string.
+
+// const result = (str,arr)=> str.split('').filter( item => arr.indexOf(item) > -1).length
+
+// const array = 'aeiou'
+// const newarr = array.split('')
+
+// console.log(result("javascript",newarr))
+
+
+// IndexOf method
+// function updateVegetablesCollection (veggies, veggie) {
+//     if (veggies.indexOf(veggie) === -1) {
+//         veggies.push(veggie);
+//         console.log('New veggies collection is : ' + veggies);
+//     } else {
+//         console.log(veggie + ' already exists in the veggies collection.');
+//     }
+// }
+
+// const veggies = ['potato', 'tomato', 'chillies', 'green-pepper'];
+
+// updateVegetablesCollection(veggies, 'spinach');
+
+// updateVegetablesCollection(veggies, 'spinach');
+
+
 // Exercise 3:
 // Write a JavaScript function to convert an amount to coins.
 // Example input: 46 and possible coins 25, 10, 5, 2, 1
 // Output: 25, 10, 10, 1
+
+
 // Exercise 4:
 // Write a JavaScript function to extract unique characters from a string.
+// const unique = (str) => 
+// str.split('').filter((elem,index,arr) => arr.slice(index+1).indexOf(elem) === -1)
+
+// // const unique = (str) => str.split('').filter((elem,index,arr) => arr.indexOf(elem) === index)
+// console.log(unique("aaabbbccc"))
+
+// // unique value by set method
+
+// var myArray = ['a', 1, 'a', 2, '1',2,3,41,1];
+// const string = "aaabbbccc"
+// const newarr = string.split('')
+
+// // let uniquearr = [...new Set(newarr)];
+// // let uniquearr = new Set(newarr);
+// console.log(uniquearr)
+
+// const cars = ['Volvo', 'Jeep', 'Volvo', 'Lincoln', 'Lincoln', 'Ford'];
+// const uniqueCars = Array.from(new Set(cars));
+// console.log(uniqueCars);
+
+// const result = (str,arr)=> str.split('').filter( item => arr.indexOf(item) > -1)
+
+// const array = 'abc'
+// const newarr = array.split('')
+
+// console.log(result("aaabbbccc",newarr))
+
 // Exercise 5:
 // Write a JavaScript function to find the first not repeated character
 // Example string: 'abacddbec'
-// Expected output: 'e'
 
-[...Array(n)].map((elementInArray, index) => ( 
-    <div className="" key={i}> Whatever needs to be rendered repeatedly </div> 
-    )
+// const result = (str)=> 
+// str.split('').filter( (itm,i,arr) => arr.filter(arritm => itm===arritm).length === 1)
 
-
-
-
+// // str.split('').filter( (itm,i,arr) => arr.filter(arritm => itm===arritm).length === 1)
+// // .join('')
+// console.log(result('abacddbec'))
 
 
+// condition for limit in map like for method 
+// const test = [1,2,3,4,5,6]
+
+// const newarr = [...Array(5)].map((em,index) => console.log(test(index)))
+//  console.log(newarr)
+
+// const filterresult = test.filter((elm,i)=>  i<3 && elm)
+// console.log(filterresult)
+
+// test.map((elm,i)=>  i<3 && console.log(elm))
+
+// const mapresult = test.map((elm,i)=>  i<3 && elm)
+// console.log(mapresult)
 
 
+// const indices = [];
+// const array = ['a', 'b', 'a', 'c', 'a', 'd'];
+// const element = 'a';
+// let idx = array.indexOf(element);
+// console.log(idx);
+// while (idx != -1) {
+//   indices.push(idx);
+//   idx = array.indexOf(element, idx + 1);
+//   console.log(idx)
+// }
+// console.log(indices);
 
 
+// dice function 
+// let array1 = ()=> Math.ceil(Math.random()* 6 )
+
+// let dice1 = array1()
+// let dice2 = array1()
+// console.log("dice1:",dice1 , 'dice2:', dice2)
+
+// dice1===dice2 ? console.log('both are same') : dice1>dice2 ? console.log('dice1 is greater') : console.log('dice2 is greater') ;
+
+// captilize these letter 
+
+// let array = ['mUmbai','delHi','jaipUr', 'udaPur']
+// let result = array.join(',').toLowerCase()
+// console.log(result)
+// let test = result.split(',').map(item => item[0].toUpperCase() + item.substr(1))
+// console.log(test)
+
+// let array = ['mUmbai','delHi','jaipUr', 'udaPur']
+// // let test = array.map(item => item[0].toUpperCase() + item.substr(1).toLowerCase())
+// // console.log(test)
+// let test1 = array.map(item => item[0].toUpperCase() + item.slice(1).toLowerCase())
+// console.log(test)
+
+// const mySentence = "freeCodeCamp is an awesome resource";
+// const words = mySentence.split(" ");
+// console.log(words)
+
+// for (let i = 0; i < words.length; i++) {
+//     words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+// }
+// console.log(words)
+
+// finding word
+// let greeting = ["let play holi", "holi is very nice and good", "dont play","because its have too much bad color", "but i love holi"]
+// const arr = ["holi"]
+// const result = ()=> greeting.filter( item => item.indexOf("holi") !== -1)
+
+console.log(result())

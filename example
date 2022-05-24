@@ -899,3 +899,87 @@
 // const result = ()=> greeting.filter( item => item.indexOf("holi") !== -1)
 
 console.log(result())
+const people = [
+    { firstName: 'Sam', lastName: 'Hughes', DOB: '07/07/1978', department: 'Development', salary: '45000' },
+    { firstName: 'Terri', lastName: 'Bishop', DOB: '02/04/1989', department: 'Development', salary: '35000' },
+    { firstName: 'Jar', lastName: 'Burke', DOB: '11/01/1985', department: 'Marketing', salary: '38000' },
+    { firstName: 'Julio', lastName: 'Miller', DOB: '12/07/1991', department: 'Sales', salary: '40000' },
+    { firstName: 'Chester', lastName: 'Flores', DOB: '03/15/1988', department: 'Development', salary: '41000' },
+    { firstName: 'Madison', lastName: 'Marshall', DOB: '09/22/1980', department: 'Sales', salary: '32000' },
+    { firstName: 'Ava', lastName: 'Pena', DOB: '11/02/1986', department: 'Development', salary: '38000' },
+    { firstName: 'Gabriella', lastName: 'Steward', DOB: '08/26/1994', department: 'Marketing', salary: '46000' },
+    { firstName: 'Charles', lastName: 'Campbell', DOB: '09/04/1977', department: 'Sales', salary: '42000' },
+    { firstName: 'Tiffany', lastName: 'Lambert', DOB: '05/11/1990', department: 'Development', salary: '34000' },
+    { firstName: 'Antonio', lastName: 'Gonzalez', DOB: '03/24/1985', department: 'Office Management', salary: '49000' },
+    { firstName: 'Aaron', lastName: 'Garrett', DOB: '09/04/1985', department: 'Development', salary: '39000' },
+];
+
+// Exercises
+
+// 1) What is the average income of all the people in the array?
+// const result = ()=> people.reduce((acc,value)=> parseInt(value.salary) + acc , 0) / people.length
+// console.log(result())
+
+// 2) Who are the people that are currently older than 30?
+// const result = ()=> people.filter(person => new Date().getFullYear() - new Date(person.DOB).getFullYear() > 30)
+// console.log(result())
+
+// 3) Get a list of the people's full name (firstName and lastName).
+// const result = ()=> people.map(item=> item.firstName + " " + item.lastName)
+// console.log(result())
+
+// 4) Get a list of people in the array ordered from youngest to oldest.
+// const result =  ()=> people.sort((a,b) => new Date(a.DOB).getFullYear()- new Date(b.DOB).getFullYear())
+// console.log(result())
+
+// 5) How many people are there in each department?
+// const result = ()=> people.reduce((acc,person)=> ({...acc, [person.department]: acc[person.department] + 1 || 1}),{})
+// console.log(result())
+
+
+// const orders = [
+//     { orderId: '123', customerId: '123', deliveryDate: '01-01-2020', delivered: true, items: [
+//         { productId: '123', price: 55 },
+//         { productId: '234', price: 30 },
+//     ]},
+//     { orderId: '234', customerId: '234', deliveryDate: '01-02-2020', delivered: false, items: [
+//         { productId: '234', price: 30 },
+//     ]},
+//     { orderId: '345', customerId: '234', deliveryDate: '05-01-2020', delivered: true, items: [
+//         { productId: '567', price: 30 },
+//         { productId: '678', price: 80 },
+//     ]},
+//     { orderId: '456', customerId: '345', deliveryDate: '12-01-2020', delivered: true, items: [
+//         { productId: '789', price: 12 },
+//         { productId: '890', price: 90 },
+//     ]},
+//         { orderId: '578', customerId: '456', deliveryDate: '12-01-2020', delivered: true, items: [
+//         { productId: '901', price: 43 },
+//         { productId: '123', price: 55 },
+//     ]},
+// ];
+
+// Exercises
+
+// 1) Get a list of the orders for the customer with the ID 234 that have not been delivered.
+// const result =  orders.filter(cus=> cus.customerId === '234').filter(deliver => !deliver.delivered)
+// const resultshort = orders.filter(cus=> cus.customerId === '234' && !cus.delivered) 
+// console.log(result)
+
+// 2) Create a new property on each order with the total price of items ordered.
+// const result = orders.map(order=>({...order, orderTotal:order.items.reduce((acc,value)=>acc + value.price,0)}))
+// console.log(result)
+
+// 3) Have all the orders been delivered?
+// const result3 = orders.every(order=>order.delivered)
+// console.log(result3)
+
+// 4) Has the customer with ID '123' made any orders?
+// const result = orders.some(order=>order.customerId ==='123')
+// const result2 = orders.some(order=>order.customerId ==='123' && order.items.some(item=>item.productId === '123'))
+// console.log(result)
+
+// 5) Have any products with an id of 123 been sold?
+// const result = orders.reduce((acc,value)=> acc + value.items.reduce((acc,value)=>acc + (value.productId === '123'),0) ,0)
+// console.log(result)
+

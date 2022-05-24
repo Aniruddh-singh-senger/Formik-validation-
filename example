@@ -897,8 +897,9 @@
 // let greeting = ["let play holi", "holi is very nice and good", "dont play","because its have too much bad color", "but i love holi"]
 // const arr = ["holi"]
 // const result = ()=> greeting.filter( item => item.indexOf("holi") !== -1)
-
+// const result = ()=> greeting.filter( item => item.includes("holi"))
 console.log(result())
+
 const people = [
     { firstName: 'Sam', lastName: 'Hughes', DOB: '07/07/1978', department: 'Development', salary: '45000' },
     { firstName: 'Terri', lastName: 'Bishop', DOB: '02/04/1989', department: 'Development', salary: '35000' },

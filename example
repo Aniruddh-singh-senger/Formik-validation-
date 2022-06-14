@@ -983,4 +983,425 @@ const people = [
 // 5) Have any products with an id of 123 been sold?
 // const result = orders.reduce((acc,value)=> acc + value.items.reduce((acc,value)=>acc + (value.productId === '123'),0) ,0)
 // console.log(result)
+// const obj = {
+//   name: "Oliver",
+//   hobby: "Writing"
+// };
+
+// const k = "name";
+
+// // const obj = {};
+// // const k = "name";
+
+// // const obj = {
+// //   name: "Oliver",
+// //   hobby: "Writing"
+// // };
+// // const k = "profession";
+
+// // const obj = {
+// //   name: "Oliver",
+// //   hobby: "Writing"
+// // };
+// // const k = 'hobby';
+
+
+
+// const getProperty = (obj, k) => {
+//   return obj[k] ? obj[k] : "Key doesn't exist"
+// }
+
+// console.log(getProperty(obj,k))
+
+
+// const arr = [1, 2, 3, 4, 5];
+// const arr = [10];
+// const arr = [];
+// const arr = [1, 2, 3, 4, -4, -3, -2, -1];
+// const arr = [0];
+
+// const sumExtremes = (arr) => arr.length !== 0 ? arr[0] + arr[arr.length - 1] : 0
+
+// console.log(sumExtremes(arr))
+
+// const person = {
+//   firstName: 'Sherlock',
+//   lastName: 'Holmes'
+// };
+
+// const person = {
+//   firstName: 'Sherlock'
+// };
+
+// const person = {
+//   lastName: 'Holmes'
+// };
+
+
+// const getFullName = (person) => {
+//   const { firstName, lastName } = person;
+//   let fullName = "";
+//   if(firstName) fullName += firstName;
+//   if(firstName && lastName) fullName += " ";
+//   if(lastName)  fullName += lastName;
+//   return fullName;
+// }
+
+// const x = "100";
+// const y = 20;
+
+// const x = "100";
+// const y = "20";
+
+// // const x = 10;
+// // const y = 20;
+
+// const add = Number(x) + Number(y)
+// const result = +x + +y;
+
+// console.log(result)
+// console.log(add)
+
+// const x = 10;
+// const y = 20;
+
+// const x = "100";
+// const y = 20;
+
+// const x = "100 + x";
+// const y = 20;
+
+// const x = "x";
+// const y = 20;
+
+// const add = (x, y) => isNaN(x) || isNaN(y) ?  'Invalid Input' : +x + +y 
+
+
+
+
+// const str1 = '5a';
+// const str2 = '15b';
+
+// const result = parseInt(str1, 10) + parseInt(str2, 10);
+
+// console.log(result); // 👉️ 20
+
+// const s1 = parseInt('5abc', 10);
+
+// console.log(s1); // 👉️ 5
+// console.log(typeof s1); // 👉️ number
+
+// const s1 = parseInt('abc5', 10);
+// console.log(s1); // 👉️ NaN
+
+
+// const arr = ['a', 'b', 'c'];
+
+// const withSpaces = arr.join(' ');
+// console.log(withSpaces); // 👉️ 'a b c'
+
+// console.log(typeof withSpaces); // 👉️ string
+
+// Capitalize the First Letter of Each Word in Array #
+
+// function capitalizeWords(arr) {
+//   return arr.map(element => {
+//     return element.charAt(0).toUpperCase() + element.substring(1).toLowerCase();
+//   });
+// }
+
+// // 👇️ ['Hello', 'World']
+// console.log(capitalizeWords(['hello', 'world']));
+
+// // 👇️ ['One', 'Two', 'Three']
+// console.log(capitalizeWords(['one', 'two', 'three']));
+
+// function removeFirstWord(str) {
+//   const indexOfSpace = str.indexOf(' ');
+
+//   // 👇️ if you want to keep single words, delete this
+//   // if (indexOfSpace === -1) {
+//   //   return '';
+//   // }
+
+//   return str.substring(indexOfSpace + 1);
+// }
+
+// console.log(removeFirstWord('Hello World')); // 👉️ World
+// console.log(removeFirstWord('hello')); // 👉️ 'hello'
+// console.log(removeFirstWord('one two three')); // 👉️ two three
+
+
+// function removeLastWord(str) {
+//   const lastIndexOfSpace = str.lastIndexOf(' ');
+
+//   if (lastIndexOfSpace === -1) {
+//     return str;
+//   }
+
+//   return str.substring(0, lastIndexOfSpace);
+// }
+
+// console.log(removeLastWord('Hello World')); // 👉️ Hello
+// console.log(removeLastWord('hello')); // 👉️ hello
+// console.log(removeLastWord('one two three')); // 👉️ one two
+
+
+// function removeLastWord(str) {
+//   const words = str.split(' ');
+
+//   if (words.length === 1) {
+//     return str;
+//   }
+
+//   return words.slice(0, -1).join(' ');
+// }
+
+// console.log(removeLastWord('Hello World')); // 👉️ Hello
+// console.log(removeLastWord('hello')); // 👉️ hello
+// console.log(removeLastWord('one two three')); // 👉️ one two
+
+// const elapsedSeconds = 3670;
+// // const elapsedSeconds = 670;
+
+// const formatElapsedSeconds = (elapsedSeconds) => {
+//   const hours = parseInt(elapsedSeconds / 3600);
+//   const minutes = parseInt((elapsedSeconds / 60) % 60);
+//   const seconds = parseInt(elapsedSeconds % 60);
+//   return `${ hours }:${ minutes }:${ seconds }`;
+// }
+
+// console.log(formatElapsedSeconds(elapsedSeconds))
+
+// const obj = {
+//   name: "Oliver",
+//   age: 28,
+//   address: "Main Street, New York, NY 10030"
+// };
+// const property = "name";
+
+// const getProperty = (object, property) => {
+//   const value = object[property];
+//   return value || "Not found";
+// }
+
+// const getProperty = (object, property) => {
+// let {name, age,address} = object
+// if(property === "name") return name
+// if(property === "age") return age
+// if(property === "address") return address
+//  return "Not found"
+// }
+// console.log(getProperty(obj,property))
+
+// find method imp
+
+// const borrowedBooks = [
+//     {
+//       book: "Invisible Man",
+//       borrower: "oliver_smith",
+//       date: "10-May-2021",
+//     },
+//     {
+//       book: "The Boy Who Harnessed the Wind",
+//       borrower: "anna_smith",
+//       date: "16-March-2021",
+//     },
+//     {
+//       book: "The Book Thief",
+//       borrower: "sam_smith",
+//       date: "21-April-2020",
+//     }
+//   ];
+// const userName = "oliver_smith";
+
+// const getBorrower = (booksRecord, borrower) => {
+//  const borrowedBookDetails = booksRecord.find((bookRecord) => bookRecord.borrower === borrower);
+//   if (borrowedBookDetails) {
+//     const book = borrowedBookDetails.book;
+//     const date = borrowedBookDetails.date;
+//     return `${borrower} borrowed "${book}" on ${date}`;
+//   }
+//   return "No books borrowed";
+// }
+
+// console.log(getBorrower(borrowedBooks,userName))
+
+
+// const obj = {
+//   id: 1,
+//   userName: "oliver_smith",
+//   name: "Oliver Smith",
+// };
+// const propertyToBeUpdated = "age";
+// const value = 32;
+
+// const updateObject = (obj, property, value) => {
+//  obj[property] = value
+//  return obj
+// //   return JSON.stringify(obj, null, 2);
+// }
+
+// console.log(updateObject(obj,propertyToBeUpdated,value))
+
+// const list = ["Sam", "Ann", "Oliver","Smith"];
+// const value = "Smith";
+
+// const addToList = (list, value) => {
+//   if (!list.includes(value)) list.push(value);
+//   return list;
+// }
+
+// // const addToList = (list, value) => {
+// // let tester = list.filter(item=> item !== value)
+// // tester.push(value)
+// // return tester
+// // }
+
+// console.log(addToList(list,value))
+
+// const list = [4, 5, -9, 19, 110];
+// let tester = 0
+
+// const sum = (list) => {
+// list.map(item => tester += item)
+// return tester
+// }
+
+// console.log(sum(list))
+
+// const users = [
+//   {
+//     name: "Sam",
+//     vaccinated: false,
+//   },
+//   {
+//     name: "Ann",
+//     vaccinated: true,
+//   },
+//   {
+//     name: "Oliver",
+//     vaccinated: true,
+//   },
+//   {
+//     name: "Smith",
+//     vaccinated: false,
+//   },
+//   {
+//     name: "Sam Smith",
+//     vaccinated: true,
+//   }
+// ];
+
+// const vaccinatedUsers = (users) => {
+//  const vaccinatedUsers = users.filter(item => item.vaccinated).map(item => item.name)
+//  return  vaccinatedUsers.join(', ');
+// }
+
+// // const vaccinatedUsers = (users) => {
+// // return users.filter(item =>  item.vaccinated === true).map(item => item.name)
+// // }
+
+// console.log(vaccinatedUsers(users))
+
+
+// const users = ["Ann", "Sam", "Smith", "Oliver"];
+// const user = "Alice";
+// const index = 2;
+
+// function insertUser(users, user, index){
+// return users.splice(index,0,user)
+ 
+// }
+
+// console.log(insertUser(users, user, index))
+
+// searching values 
+
+// const users = [
+//   {
+//     user: "Lindsay",
+//     device: "MacBook Pro 13",
+//   },
+//   {
+//     user: "Peter",
+//     device: "MacBook",
+//   },
+//     {
+//     user: "Victoria",
+//     device: "MacBook Pro 15",
+//   },
+//   {
+//     user: "Erica",
+//     device: "Dell",
+//   },
+//   {
+//     user: "Clark",
+//     device: "macbook pro 13",
+//   }
+// ];
+
+// function macbookUsers(users){
+//   return users.filter(({ device = "" }) =>  {
+//     return device.toLowerCase().includes("macbook");
+//   }).map(({user}) => user);
+// }
+
+// console.log(macbookUsers(users))
+
+// const list = ["MacBook", "Asus Zenbook 14", "MacBook Pro 13", "iMac", "MacBook Pro"];
+// const value = "iMac";
+
+// const list = ["Star", "Blackhole", "Planet", "Asteroid", "Constellation"];
+// const value = "Wormhole";
+
+// function getIndex(list, value){
+// return (list.indexOf(value) === -1 ) ? "Not found" : list.indexOf(value) 
+// }
+
+const region = "USA";
+const manufacturers = [
+  {
+    name: "Ford",
+    region: "USA",
+    cars: ["Fusion", "EcoSport", "Explorer", "Ranger", "Edge", "Escape"]
+  },
+  {
+    name: "Suzuki",
+    region: "Asia",
+    cars: ["Carry Truck", "Carry Dump Truck", "Jimny", "Landy"]
+  },
+  {
+    name: "PSA Peugeot-Citroën",
+    region: "Europe",
+    cars: ["Peugeot 504", "Citroën GS", "Citroën CX", "Simca 1307-08", "Simca Horizon"]
+  },
+  {
+    name: "Fiat-Chrysler",
+    region: "Europe",
+    cars: ["Alfa Romeo", "Pacifica", "Fiat 500X", "Fiat Egea"]
+  },
+  {
+    name: "Honda",
+    region: "Asia",
+    cars: ["Civic", "Clarity", "CRV", "Freed", "S660", "Shuttle", "Legend"]
+  },
+  {
+    name: "Jeep",
+    region: "USA",
+    cars: ["Waggoneer", "Wrangler", "Cherokee", "Compass", "Renegade", "Gladiator"]
+  }
+];
+
+// function getCarsByRegion(manufactures, region){
+//  return manufactures.filter(item => item.region == region).reduce(( preValue, currValue ) => preValue.concat(currValue.cars),[])
+// }
+
+// // function getCarsByRegion(manufactures, region){
+// //  return manufactures.filter(item => item.region == region).map(item => item.cars).reduce(
+// //   (previousValue, currentValue ) => previousValue.concat(currentValue),[])
+// // }
+// console.log(getCarsByRegion(manufacturers,region))
+
+
 

@@ -1403,5 +1403,381 @@ const manufacturers = [
 // // }
 // console.log(getCarsByRegion(manufacturers,region))
 
+// const title = "bug:infinite-spinner-in-home-page";
+
+// function getIssueType(title){
+//  return title.substr(0,title.indexOf(":"))
+// }
+
+// console.log(getIssueType(title))
+
+// const cardNumber = '5555 5555 5555 4444'
+
+// const maskCreditCardNumber = ()=> {
+// //   const trimmedNumber = cardNumber.replaceAll(' ','');
+//   const lastDigits = cardNumber.slice(-4);
+//   return lastDigits.padStart(cardNumber.length, '*');
+// }
+
+// console.log(maskCreditCardNumber())
+
+// const value = 'e82f bit';
+
+// function FindHexNumber(value){
+// 	  return (Number.isNaN(parseInt(value, 16)) ? 0 : parseInt(value, 16));
+//   }
+
+// console.log(FindHexNumber(value))
+
+// const completedLocationIds = [1, 3];
+// const campainDetails = [
+//   {
+//     id: 1,
+//     name: "Aizawl",
+//     state: "Mizoram",
+//     completed: false,
+//   },
+//   {
+//     id: 2,
+//     name: "Kochi",
+//     state: "Haryana",
+//     completed: false,
+//   },
+//   {
+//     id: 3,
+//     name: "Nagercoil",
+//     state: "Tamil Nadu",
+//     completed: false,
+//   },
+// ];
+// const newLocations = [
+//   {
+//     id: 4,
+//     name: "Kurnool",
+//     state: "Andhra Pradesh",
+//     completed: false,
+//   },
+//   {
+//     id: 5,
+//     name: "Warangal",
+//     state: "Telangana",
+//     completed: false,
+//   },
+// ];
+
+// const updateCampaignDetails = (campainDetails, completedLocationIds, newLocations) => {
+//   campainDetails = campainDetails.map(location => {
+//       if (completedLocationIds.includes(location.id)) {
+//         return {...location, completed: true};
+//       } else {
+//         return location;
+//       }
+//     });
+//     campainDetails.splice(2,0,newLocations);
+//     return JSON.stringify(campainDetails);
+// }
+
+// console.log(updateCampaignDetails(campainDetails, completedLocationIds, newLocations)) 
+
+// const solveJumbledWords = (word, sampleDictionary) => {
+//   const sortedWord = word.toLowerCase().split('').sort().join('');
+//   let finalWord = false;
+//   for (let i = 0; i < sampleDictionary.length; i++) {
+//       const tempSortedWord = sampleDictionary[i].toLowerCase().split('').sort().join('');
+//       if (tempSortedWord === sortedWord) {
+//         finalWord = sampleDictionary[i];
+//         break;
+//       }
+//   };
+//   return finalWord;
+// }
+
+// const word = 'AEBUMRCNSSL';
+// const sampleDictionary = ['Personality', 'Quadrillion', 'Abandonedly', 'Unscrambles', 'Abashedness'];
+
+// const solveJumbledWords = (word, sampleDictionary) => {
+//   const sortedWord = word.toLowerCase().split('').sort().join('');
+//   let finalWord = false;
+//   for (let i = 0; i < sampleDictionary.length; i++) {
+//       const tempSortedWord = sampleDictionary[i].toLowerCase().split('').sort().join('');
+//       if (tempSortedWord === sortedWord) {
+//         finalWord = sampleDictionary[i];
+//         break;
+//       }
+//   };
+//   return finalWord;
+// }
+
+// console.log(solveJumbledWords(word, sampleDictionary))
 
 
+// const a = 0.205;
+// const b = 0.312;
+
+// const add = (a, b) => {
+//   const result = parseFloat(a) + parseFloat(b);
+//   return result.toFixed(2);
+// }
+
+// console.log(add(a,b))
+
+// const locations =  [
+//     {
+//         "id": 1,
+//         "name": "Gotham",
+//         "diseases": ['COVID-19', 'Disease-A', 'Disease-B']
+//     },
+//     {
+//         "id": 2,
+//         "name": "NeverLand",
+//         "diseases": ['Disease-R', 'Disease-H', 'Disease-G']
+//     },
+//     {
+//         "id": '3',
+//         "name": "Asgard",
+//         "diseases": ['Disease-L', 'COVID-19', 'Disease-B']
+//     }
+// ];
+
+// const findOtherDiseases  = (locations) => {
+//   const locationsWithCovid = locations.filter(location => {
+//     return ((location.diseases).includes('COVID-19'))
+//   });
+//   const diseases = [];
+//   locationsWithCovid.map(location => diseases.push(...location.diseases));
+//   const diseasesSet = new Set(diseases);
+//   diseasesSet.delete('COVID-19');
+//   return [...diseasesSet];
+// }
+
+// console.log(findOtherDiseases(locations))
+
+// const length = 20;
+
+// const createArray = (length) => {
+// return new Array(length)
+// }
+
+// console.log(createArray(length))
+
+// const alphaNumeric = '0987654321abcdefgh';
+
+// const findSumOfDigits = (alphaNumeric) => {
+//     const digits = parseInt(alphaNumeric);
+//     if (digits) {
+//         return digits.toString().split('').map(Number).reduce((a,b) => a + b, 0);
+//     }
+//     return false
+// }
+// console.log(findSumOfDigits(alphaNumeric))
+
+
+// const rivers = ['Periyar', 'Kaveri', 'Tungabhadra', 'Pampa', 'Periyar', 'Tungabhadra', 'Pampa'];
+
+// const removeDuplicateAndSort = (rivers) => {
+//   const results = new Set(rivers)
+//   return [...results]
+// }
+
+// console.log(removeDuplicateAndSort(rivers))
+
+
+// function fetchURLDetails() {
+//   return JSON.stringify({
+//     currentUrl: window.location.href,
+//     pathname: window.location.pathname
+//   });
+// }
+
+// const myArray = [1, 2, 1, 'b', 'c', 'e', 'e', 'c', 'd', 'd', 'd', 'd']
+// let myArrayWithNoDuplicates = myArray.reduce(function (previousValue, currentValue) {
+//   if (previousValue.indexOf(currentValue) === -1) {
+//     previousValue.push(currentValue)
+//   }
+//   return previousValue
+// }, [])
+
+// console.log(myArrayWithNoDuplicates)
+
+// const codes = [73, 20, 76, 111, 118, 101, 20, 74, 83];
+
+// function convertToString(codes) {
+//   return String.fromCharCode(...codes)
+// }
+
+// console.log(convertToString(codes))
+
+// const scores = [20, 32, 51, 103, 88, 26];
+
+// function highestScore() {
+//   return Math.max(...scores);
+// }
+
+// console.log(highestScore())
+
+// const month = 2;
+// const year = 2000;
+
+// const getDaysCount = () => {
+//   return new Date(year, month, 0).getDate();
+// }
+
+// console.log(getDaysCount())
+
+// let surveyAnswers = [
+//   {
+//     name: "Jacqueline",
+//     favoriteIndianMovie: "Kumbalangi Nights",
+//   },
+//   {
+//     name: "Dawson",
+//     favoriteIndianMovie: "Thappad",
+//   },
+//   {
+//     name: "Jocelyn",
+//     favoriteIndianMovie: "Karnan",
+//   },
+//   {
+//     name: "Palmer",
+//     favoriteIndianMovie: "Kumbalangi Nights",
+//   },
+// ];
+
+// function getIndianMovies() {
+// let result = surveyAnswers.map(item=> item.favoriteIndianMovie).sort()
+// return result.reduce(function (previousValue, currentValue) {
+//   if (previousValue.indexOf(currentValue) === -1) {
+//     previousValue.push(currentValue)
+//   }
+//   return previousValue
+// }, [])
+// }
+
+// console.log(getIndianMovies())
+
+
+// let respondentDetails = [
+//   {
+//     name: "Jacqueline",
+//     html: 30,
+//     css: 11,
+//     javascript: 23,
+//   },
+//   {
+//     name: "Dawson",
+//     html: 30,
+//     css: 27,
+//     javascript: 15,
+//   },
+//   {
+//     name: "Jocelyn",
+//     html: 30,
+//     css: 15,
+//     javascript: 19,
+//   },
+// ];
+
+// function setTotalCount() {
+//   const result = respondentDetails.map((respondent) => {
+//     return {
+//       ...respondent,
+//       totalCount: respondent.html + respondent.css + respondent.javascript
+//     };
+//   })
+//   return JSON.stringify(result);
+// }
+
+// console.log(setTotalCount())
+
+// let respondentDetails = [
+//   {
+//     html: 30,
+//     css: 11,
+//     javascript: 23,
+//     react: 21,
+//   },
+//   {
+//     html: 30,
+//     css: 27,
+//     javascript: 15,
+//     ruby: 25,
+//   },
+//   {
+//     html: 30,
+//     css: 15,
+//     javascript: 19,
+//     ruby: 25,
+//     sql: 27,
+//     tailwindCSS: 15
+// },
+// ];
+
+// function setTotalCount() {
+//   const result = respondentDetails.map((respondent) => {
+//     return {
+//       ...respondent,
+//       totalCount: Object.values(respondent).reduce((a, b) => a + b)
+//     };
+//   })
+//   return JSON.stringify(result);
+// }
+
+// console.log(setTotalCount)
+
+// const playerStats = {
+//   "Rose Mary": 14.69,
+//   "Joey Holden": 16.00,
+//   "Ged Brewer": 15.77
+// }
+
+// function findBestBowlingAvg() {
+// let result = Object.values(playerStats)
+// return Math.min(...result).toFixed(3)
+// }
+
+// console.log(findBestBowlingAvg())
+
+const teams = [
+//     {
+//         name: 'Eagles',
+//         points: [19, 44, 27, 76, 55]
+//     },
+//     {
+//         name: 'Scorpions',
+//         points: [39, 66, 51, 78, 76]
+//     },
+//     {
+//         name: 'Wolves',
+//         points: [23, 46, 77, 70, 92]
+//     }
+// ]
+
+// function findWinningTeam() {
+//  return teams.map(item=>{
+//      return{
+//          ...item,
+//          totalCount: item.points.reduce((a,b)=> a + b,0)
+//      }
+//  } )
+// }
+
+// function findWinningTeam(teams) {
+//   let winningTeam = {
+//     name: "",
+//     totalPoints: 0,
+//   };
+//   teams.forEach((team) => {
+//     const totalPoints = team.points.reduce(
+//       (currentSum, currentValue) => currentSum + currentValue
+//     );
+//     if (winningTeam.totalPoints < totalPoints) {
+//       winningTeam = {
+//         name: team.name,
+//         totalPoints: totalPoints,
+//       };
+//     }
+//   });
+//   return JSON.stringify(winningTeam);
+// }
+
+// console.log(findWinningTeam())

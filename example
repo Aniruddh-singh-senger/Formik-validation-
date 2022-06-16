@@ -1737,7 +1737,7 @@ const manufacturers = [
 
 // console.log(findBestBowlingAvg())
 
-const teams = [
+// const teams = [
 //     {
 //         name: 'Eagles',
 //         points: [19, 44, 27, 76, 55]
@@ -1753,12 +1753,17 @@ const teams = [
 // ]
 
 // function findWinningTeam() {
-//  return teams.map(item=>{
-//      return{
+//  let array = teams.map(item=>{
+     
+//      let result ={
 //          ...item,
-//          totalCount: item.points.reduce((a,b)=> a + b,0)
+//          totalPoints: item.points.reduce((a,b)=> a + b,0),
 //      }
+//     delete result.points
+//  return result
 //  } )
+//  let array2 =  array.filter(item=>item.totalPoints >=309)
+//  return JSON.stringify( array2[0])
 // }
 
 // function findWinningTeam(teams) {

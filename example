@@ -1842,3 +1842,59 @@ const manufacturers = [
 
 // console.log( final.join(', '));
 
+// const s1 = "John likes Icecream";
+// const s2 = "Everyone likes Icecream";
+
+// const uniqueWords = (s1, s2) => {
+//   const strArr = [...s1, " ", ...s2].join("");
+//   const result = [...new Set(strArr.split(" "))];
+//   return JSON.stringify(result);
+// };
+
+// console.log(uniqueWords(s1, s2))
+
+
+// const str = [1,2,3,445,6]
+// const str2 = [ 7,78,78,7,7,877,87,87,8,7]
+
+// const isPangram = (str) => {
+//   return [...str, ...str2];
+// };
+
+// console.log(isPangram(str))
+
+
+// const arr1 = [1, 2, 3, 5];
+// const arr2 = [1, 2, 3, 4, 5];
+
+// const arr1 = ["miami", "pune", "kochi"];
+// const arr2 = [];
+
+// const commonElements = (arr1, arr2) => {
+//   if (arr1.length === 0) return JSON.stringify(arr2);
+//   if (arr2.length === 0) return JSON.stringify(arr1);
+//   return JSON.stringify(arr1.filter((el) => arr2.includes(el)));
+// };
+
+
+// console.log(commonElements(arr1,arr2) )
+
+
+// const marksArr = [
+//   { student: "Phoebe", marks: 44 },
+//   { student: "Ross", marks: 78 },
+//   { student: "Monica", marks: 89 },
+// ];
+// const lower_limit = 50;
+// const upper_limit = 80;
+
+
+// const marksInRange = (marksArr,upper_limit,lower_limit) => {
+// let array = marksArr.filter(item=> item.marks>=lower_limit && item.marks<=upper_limit )
+// return JSON.stringify(array)
+}
+
+console.log(marksInRange (marksArr,upper_limit,lower_limit) )
+
+
+

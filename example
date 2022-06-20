@@ -1925,4 +1925,18 @@ const enigmaFunction = (message, key) => {
 console.log(enigmaFunction (message, key))
 
 
+const departmentNamesList = ['Programming', 'QA'];
+let departmentNewsletterList ={Programming: ['frontend', 'backend', 'database', 'javascript', 'ruby'],
+QA: ['unit testing', 'regression testing', 'alpha testing', 'beta testing'],
+Marketing: ['outbound', 'inbound', 'digital', 'content', 'video'],
+Sales: ['inside', 'outside', 'client services', 'lead generation']}
+
+function getNewsletterList(departmentNewsletterList, departmentNamesList){
+return [].concat(...departmentNamesList.map(name =>departmentNewsletterList[name])).sort().join(",")
+//   console.log(departmentNewsletterList.sort().join(","))
+    }
+    
+   console.log( getNewsletterList(departmentNewsletterList,departmentNamesList))
+
+
 

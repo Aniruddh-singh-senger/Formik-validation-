@@ -1414,7 +1414,7 @@ const manufacturers = [
 // const cardNumber = '5555 5555 5555 4444'
 
 // const maskCreditCardNumber = ()=> {
-// //   const trimmedNumber = cardNumber.replaceAll(' ','');
+// //   const trimmedNumber = cardNumber.replace(/ /g,'');
 //   const lastDigits = cardNumber.slice(-4);
 //   return lastDigits.padStart(cardNumber.length, '*');
 // }

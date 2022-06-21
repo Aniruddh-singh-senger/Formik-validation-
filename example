@@ -1937,6 +1937,91 @@ return [].concat(...departmentNamesList.map(name =>departmentNewsletterList[name
     }
     
    console.log( getNewsletterList(departmentNewsletterList,departmentNamesList))
+   
+   
+   // const obj = {
+//   apple: 100,
+//   banana: 60,
+//   orange: 120,
+//   kiwi: 250,
+// };
+
+// const keysAndValues = (obj) => {
+// // let array1 =  Object.keys(obj)
+// // let array2 =  Object.values(obj)
+// // return [array1,array2]
+// return Object.entries(obj)
+// };
+
+// console.log(keysAndValues(obj))
+
+// const arr = [1, 2, 3, 4, 5, 6];
+// const maxlen = 3;
+
+// const splitArray = (arr, maxlen) => {
+//   const results = [];
+//   while (arr.length) {
+//     //   for (let i= 0; i<=arr.length; i++) {
+//     results.push(arr.splice(0, maxlen));
+//   }
+//   return JSON.stringify(results);
+// };
+
+// console.log(splitArray(arr, maxlen))
+
+// const arr = [1, 5, 7];
+
+// const accumulatingArray = (arr) => {
+//   let totalSum = 0;
+//   return JSON.stringify(arr.map((x) => (totalSum += x)));
+// };
+
+// console.log(accumulatingArray (arr))
+
+// const arr = [0, 1, false, 2, undefined, "", 3, null];
+// const compactArray = () => JSON.stringify(arr.filter((el) => el));
+
+// console.log(compactArray())
 
 
+// const arr1 = [1, 2, 3, 4];
+// const arr2 = [1, 2, 3, 4];
 
+// // const arr1 = ["Miami", "Pune", "Kochi"];
+// // const arr2 = ["Kochi", "Miami", "Pune"];
+
+// // const arr1 = [1, 2, 3];
+// // const arr2 = [1, 2, 3, 4, 5];
+
+// const compareArray = (arr1, arr2)  => {
+//     if(arr1.length == arr2.length){
+//     return arr1.every((item,index) => item === arr2[index])
+//     }
+//     return false
+// };
+
+// console.log( compareArray  (arr1, arr2) )
+
+
+// const str = "RubyOnRails";
+// // const str = "WeLoveJavascript";
+
+// // const toSnakeCase = (str) => {
+// //   return (
+// //     str.slice(0, 1).toLowerCase() +
+// //     str
+// //       .split("")
+// //       .slice(1)
+// //       .map((char) => {
+// //         if (char == char.toUpperCase()) return "_" + char.toLowerCase();
+// //         else return char;
+// //       })
+// //       .join("")
+// //   );
+// // };
+
+// const toSnakeCase = (str) => {
+//  return  str.split(/(?=[A-Z])/).join("_").toLowerCase()
+// };
+
+// console.log( toSnakeCase (str))

@@ -2025,3 +2025,20 @@ return [].concat(...departmentNamesList.map(name =>departmentNewsletterList[name
 // };
 
 // console.log( toSnakeCase (str))
+
+// ascending lower to higher
+
+// const arr = [[11,13], [4,12], [2,1]];
+// const findSum = (item) => item.reduce((acc, s) => acc + s);
+// const orderBySum = (arr) => JSON.stringify(arr.sort((a,b) => findSum(a) - findSum(b)));
+
+// console.log(orderBySum(arr))
+
+// descending higher to lower
+
+// const arr = [[11,13], [4,12], [2,1]];
+// const findSum = (item) => item.reduce((acc, s) => acc + s);
+
+// const orderBySum = (arr) => JSON.stringify(arr.sort((a,b) => findSum(b) - findSum(a)  ));
+// console.log(orderBySum(arr))
+

@@ -2042,3 +2042,31 @@ return [].concat(...departmentNamesList.map(name =>departmentNewsletterList[name
 // const orderBySum = (arr) => JSON.stringify(arr.sort((a,b) => findSum(b) - findSum(a)  ));
 // console.log(orderBySum(arr))
 
+// let a =  Array(3);
+// console.log(a.join('.').split('.').map((v,i) => i + 1));
+
+// let a = new Array(3);
+// console.log([...a].map(v => 1));
+
+// let a = new Array(3);
+// a.fill(1);
+
+// let c = 2 , b = 10
+// let a = new Array(b);
+// console.log(a.fill(1).map((v,i) => (i + 1)*c));
+
+// table 
+// const customFunction =(a,b)=>{
+//     let array = []
+//   for(let i=1; i<=b; i++){
+//       array.push(a*i)
+//   }
+//   return array
+// }
+
+// function result(a,b,customFunction){
+//     return customFunction(a,b)
+// }
+
+// console.log(result(9,10,customFunction))
+

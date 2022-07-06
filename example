@@ -2569,3 +2569,62 @@ console.log(isOrderedAlphabetically("jheca", false)) // false
 
 
 
+// function myFunction(str){
+// return str.split("").map((item)=>String.fromCharCode(item.charCodeAt() + 1)).join("")
+// }
+
+// // function myFunction(str) {
+// //   const arr = [...str];
+// //   const correctedArray = arr.map(e => String.fromCharCode(e.charCodeAt()+1));
+// //   return correctedArray.join('');
+// // }
+
+// console.log(myFunction('bnchmf'))
+
+// const sortString = (someString, reverseOrder) => {
+//  if(reverseOrder===false) return someString.split("").sort().join("")
+//  else{
+//      return someString.split("").sort().reverse().join("")
+//  }
+// }
+
+// console.log(sortString("bacd", false)) // "abcd"
+// console.log(sortString("axedzpq", true)) // "zxqpeda"
+
+
+const mix = (firstArray, secondArray) => {
+    let array = []
+  let greaterArray = []
+  let smallerArray = []
+   
+  firstArray.length>secondArray.length ? greaterArray =firstArray : greaterArray = secondArray
+ 
+
+if(greaterArray.length){
+      for(let i=0; i<greaterArray.length; i++){
+      if(firstArray[i] && secondArray[i]){
+        
+     array.push(firstArray[i],secondArray[i])
+      }else{
+              array.push(greaterArray[i]) 
+      }
+ }
+}
+ return array
+}
+
+
+
+
+// const array1 = ["a", "b", "c", "d"];
+// const array2 = [1, 2];
+// const mergeArrays = (a, b) => (a.length > b.length ? a : b)
+//   .reduce((acc, cur, i) => a[i] && b[i] ? [...acc, a[i], b[i]] : [...acc, cur], []);
+
+// console.log(mergeArrays(array1, array2)); // ["a",1 ,"b", 2, "c", "d"]
+
+console.log(mix([1, 2, 3], [4, 5, 6])) 
+// [1, 4, 2, 5, 3, 6]
+console.log(mix(["h", "a", "c","g","k","q"], [7, 4, 17, 10, 48])) 
+// ["h", 7, "a", 4, "c", 17, 10, 48]
+

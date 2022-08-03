@@ -98,6 +98,13 @@ console.log(a,b)
 // important method check ending here
 
 // const myArray = ['a', 'b', 'a', 'b', 'c', 'e', 'e', 'c', 'd', 'd', 'd', 'd']
+
+// let newValue = []
+
+//  myArray.map(item => (newValue.indexOf(item) === -1) && newValue.push(item))
+
+// console.log(previousValue)
+
 // let myArrayWithNoDuplicates = myArray.reduce(function (previousValue, currentValue) {
 //   if (previousValue.indexOf(currentValue) === -1) {
 //     previousValue.push(currentValue)

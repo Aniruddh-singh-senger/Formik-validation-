@@ -103,7 +103,7 @@ console.log(a,b)
 
 //  myArray.map(item => (newValue.indexOf(item) === -1) && newValue.push(item))
 
-// console.log(previousValue)
+// console.log(newValue)
 
 // let myArrayWithNoDuplicates = myArray.reduce(function (previousValue, currentValue) {
 //   if (previousValue.indexOf(currentValue) === -1) {

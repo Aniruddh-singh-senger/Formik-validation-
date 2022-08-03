@@ -1,7 +1,7 @@
-// let a = 10;
-// let b = 20;
-// [a,b] = [b,a]
-// console.log(a,b)
+let a = 10;
+let b = 20;
+[a,b] = [b,a]
+console.log(a,b)
 
 
 // important method check starting here
@@ -898,22 +898,22 @@
 // const arr = ["holi"]
 // const result = ()=> greeting.filter( item => item.indexOf("holi") !== -1)
 // const result = ()=> greeting.filter( item => item.includes("holi"))
-console.log(result())
+// console.log(result())
 
-const people = [
-    { firstName: 'Sam', lastName: 'Hughes', DOB: '07/07/1978', department: 'Development', salary: '45000' },
-    { firstName: 'Terri', lastName: 'Bishop', DOB: '02/04/1989', department: 'Development', salary: '35000' },
-    { firstName: 'Jar', lastName: 'Burke', DOB: '11/01/1985', department: 'Marketing', salary: '38000' },
-    { firstName: 'Julio', lastName: 'Miller', DOB: '12/07/1991', department: 'Sales', salary: '40000' },
-    { firstName: 'Chester', lastName: 'Flores', DOB: '03/15/1988', department: 'Development', salary: '41000' },
-    { firstName: 'Madison', lastName: 'Marshall', DOB: '09/22/1980', department: 'Sales', salary: '32000' },
-    { firstName: 'Ava', lastName: 'Pena', DOB: '11/02/1986', department: 'Development', salary: '38000' },
-    { firstName: 'Gabriella', lastName: 'Steward', DOB: '08/26/1994', department: 'Marketing', salary: '46000' },
-    { firstName: 'Charles', lastName: 'Campbell', DOB: '09/04/1977', department: 'Sales', salary: '42000' },
-    { firstName: 'Tiffany', lastName: 'Lambert', DOB: '05/11/1990', department: 'Development', salary: '34000' },
-    { firstName: 'Antonio', lastName: 'Gonzalez', DOB: '03/24/1985', department: 'Office Management', salary: '49000' },
-    { firstName: 'Aaron', lastName: 'Garrett', DOB: '09/04/1985', department: 'Development', salary: '39000' },
-];
+// const people = [
+//     { firstName: 'Sam', lastName: 'Hughes', DOB: '07/07/1978', department: 'Development', salary: '45000' },
+//     { firstName: 'Terri', lastName: 'Bishop', DOB: '02/04/1989', department: 'Development', salary: '35000' },
+//     { firstName: 'Jar', lastName: 'Burke', DOB: '11/01/1985', department: 'Marketing', salary: '38000' },
+//     { firstName: 'Julio', lastName: 'Miller', DOB: '12/07/1991', department: 'Sales', salary: '40000' },
+//     { firstName: 'Chester', lastName: 'Flores', DOB: '03/15/1988', department: 'Development', salary: '41000' },
+//     { firstName: 'Madison', lastName: 'Marshall', DOB: '09/22/1980', department: 'Sales', salary: '32000' },
+//     { firstName: 'Ava', lastName: 'Pena', DOB: '11/02/1986', department: 'Development', salary: '38000' },
+//     { firstName: 'Gabriella', lastName: 'Steward', DOB: '08/26/1994', department: 'Marketing', salary: '46000' },
+//     { firstName: 'Charles', lastName: 'Campbell', DOB: '09/04/1977', department: 'Sales', salary: '42000' },
+//     { firstName: 'Tiffany', lastName: 'Lambert', DOB: '05/11/1990', department: 'Development', salary: '34000' },
+//     { firstName: 'Antonio', lastName: 'Gonzalez', DOB: '03/24/1985', department: 'Office Management', salary: '49000' },
+//     { firstName: 'Aaron', lastName: 'Garrett', DOB: '09/04/1985', department: 'Development', salary: '39000' },
+// ];
 
 // Exercises
 
@@ -1359,39 +1359,39 @@ const people = [
 // return (list.indexOf(value) === -1 ) ? "Not found" : list.indexOf(value) 
 // }
 
-const region = "USA";
-const manufacturers = [
-  {
-    name: "Ford",
-    region: "USA",
-    cars: ["Fusion", "EcoSport", "Explorer", "Ranger", "Edge", "Escape"]
-  },
-  {
-    name: "Suzuki",
-    region: "Asia",
-    cars: ["Carry Truck", "Carry Dump Truck", "Jimny", "Landy"]
-  },
-  {
-    name: "PSA Peugeot-Citroën",
-    region: "Europe",
-    cars: ["Peugeot 504", "Citroën GS", "Citroën CX", "Simca 1307-08", "Simca Horizon"]
-  },
-  {
-    name: "Fiat-Chrysler",
-    region: "Europe",
-    cars: ["Alfa Romeo", "Pacifica", "Fiat 500X", "Fiat Egea"]
-  },
-  {
-    name: "Honda",
-    region: "Asia",
-    cars: ["Civic", "Clarity", "CRV", "Freed", "S660", "Shuttle", "Legend"]
-  },
-  {
-    name: "Jeep",
-    region: "USA",
-    cars: ["Waggoneer", "Wrangler", "Cherokee", "Compass", "Renegade", "Gladiator"]
-  }
-];
+// const region = "USA";
+// const manufacturers = [
+//   {
+//     name: "Ford",
+//     region: "USA",
+//     cars: ["Fusion", "EcoSport", "Explorer", "Ranger", "Edge", "Escape"]
+//   },
+//   {
+//     name: "Suzuki",
+//     region: "Asia",
+//     cars: ["Carry Truck", "Carry Dump Truck", "Jimny", "Landy"]
+//   },
+//   {
+//     name: "PSA Peugeot-Citroën",
+//     region: "Europe",
+//     cars: ["Peugeot 504", "Citroën GS", "Citroën CX", "Simca 1307-08", "Simca Horizon"]
+//   },
+//   {
+//     name: "Fiat-Chrysler",
+//     region: "Europe",
+//     cars: ["Alfa Romeo", "Pacifica", "Fiat 500X", "Fiat Egea"]
+//   },
+//   {
+//     name: "Honda",
+//     region: "Asia",
+//     cars: ["Civic", "Clarity", "CRV", "Freed", "S660", "Shuttle", "Legend"]
+//   },
+//   {
+//     name: "Jeep",
+//     region: "USA",
+//     cars: ["Waggoneer", "Wrangler", "Cherokee", "Compass", "Renegade", "Gladiator"]
+//   }
+// ];
 
 // function getCarsByRegion(manufactures, region){
 //  return manufactures.filter(item => item.region == region).reduce(( preValue, currValue ) => preValue.concat(currValue.cars),[])
@@ -1892,14 +1892,14 @@ const manufacturers = [
 // const marksInRange = (marksArr,upper_limit,lower_limit) => {
 // let array = marksArr.filter(item=> item.marks>=lower_limit && item.marks<=upper_limit )
 // return JSON.stringify(array)
-}
+// }
 
-console.log(marksInRange (marksArr,upper_limit,lower_limit) )
+// console.log(marksInRange (marksArr,upper_limit,lower_limit) )
 
 
 
-const key = 13;
-const message = '12The 908happy 468party 208troops 333will 124never 42fail 936to 761move 202my 765heart. 412This 297happened 1040again 64in 70the 17Coffee 780Shop 208today 55at 210sunset 99time. 321I 3want 2to 404visit 3all 313of 416the 99seven 23wonders 3123of 21the 09world';
+// const key = 13;
+// const message = '12The 908happy 468party 208troops 333will 124never 42fail 936to 761move 202my 765heart. 412This 297happened 1040again 64in 70the 17Coffee 780Shop 208today 55at 210sunset 99time. 321I 3want 2to 404visit 3all 313of 416the 99seven 23wonders 3123of 21the 09world';
 
 // const enigmaFunction = (message, key) => {
 //  const array = message.split(" ")
@@ -1909,34 +1909,34 @@ const message = '12The 908happy 468party 208troops 333will 124never 42fail 936to
 //  console.log(arraytest.map((item,index) => item.replace(parseInt(item), "")).join(" "))
 // }
 
-const enigmaFunction = (message, key) => {
-  const arrayOfWords = message.split(" ");
-  const decodedMessage = arrayOfWords.reduce(
-    (accumulator, currentValue, index) => {
-      return parseInt(currentValue) % key === 0
-        ? `${accumulator} ${arrayOfWords[index + 1].replace(
-            parseInt(arrayOfWords[index + 1]),
-            ""
-          )}`
-     : accumulator},"");
-  return String(decodedMessage.trim());
-}
+// const enigmaFunction = (message, key) => {
+//   const arrayOfWords = message.split(" ");
+//   const decodedMessage = arrayOfWords.reduce(
+//     (accumulator, currentValue, index) => {
+//       return parseInt(currentValue) % key === 0
+//         ? `${accumulator} ${arrayOfWords[index + 1].replace(
+//             parseInt(arrayOfWords[index + 1]),
+//             ""
+//           )}`
+//      : accumulator},"");
+//   return String(decodedMessage.trim());
+// }
 
-console.log(enigmaFunction (message, key))
+// console.log(enigmaFunction (message, key))
 
 
-const departmentNamesList = ['Programming', 'QA'];
-let departmentNewsletterList ={Programming: ['frontend', 'backend', 'database', 'javascript', 'ruby'],
-QA: ['unit testing', 'regression testing', 'alpha testing', 'beta testing'],
-Marketing: ['outbound', 'inbound', 'digital', 'content', 'video'],
-Sales: ['inside', 'outside', 'client services', 'lead generation']}
+// const departmentNamesList = ['Programming', 'QA'];
+// let departmentNewsletterList ={Programming: ['frontend', 'backend', 'database', 'javascript', 'ruby'],
+// QA: ['unit testing', 'regression testing', 'alpha testing', 'beta testing'],
+// Marketing: ['outbound', 'inbound', 'digital', 'content', 'video'],
+// Sales: ['inside', 'outside', 'client services', 'lead generation']}
 
-function getNewsletterList(departmentNewsletterList, departmentNamesList){
-return [].concat(...departmentNamesList.map(name =>departmentNewsletterList[name])).sort().join(",")
-//   console.log(departmentNewsletterList.sort().join(","))
-    }
+// function getNewsletterList(departmentNewsletterList, departmentNamesList){
+// return [].concat(...departmentNamesList.map(name =>departmentNewsletterList[name])).sort().join(",")
+// //   console.log(departmentNewsletterList.sort().join(","))
+//     }
     
-   console.log( getNewsletterList(departmentNewsletterList,departmentNamesList))
+//   console.log( getNewsletterList(departmentNewsletterList,departmentNamesList))
    
    
    // const obj = {
@@ -2205,37 +2205,37 @@ return [].concat(...departmentNamesList.map(name =>departmentNewsletterList[name
 // console.log(myFunction({fn: 'Lisa', ln: 'Müller', age: 17, size: 175, weight: 67}))
 
     
-const myFunction = (arr)=>{
-let accr = {}
-    for (i=0; i < arr.length; i++) {
-      let key = arr[i].charAt(0).toLowerCase()
-    if (!accr[key]) {
-      accr[key] = []
-    }
-     accr[key].push(arr[i])
-}
-return accr
-}
+// const myFunction = (arr)=>{
+// let accr = {}
+//     for (i=0; i < arr.length; i++) {
+//       let key = arr[i].charAt(0).toLowerCase()
+//     if (!accr[key]) {
+//       accr[key] = []
+//     }
+//      accr[key].push(arr[i])
+// }
+// return accr
+// }
 
-console.log(myFunction(['Alf', 'Alice', 'Ben']))
-
-
-function myFunction(arr) {
- return arr.reduce((acc, cur) => {
-   const firstLetter = cur.toLowerCase().charAt(0);
-   return { ...acc, [firstLetter]: [...(acc[firstLetter] || []), cur] };
- }, {});
-}
-
-console.log(myFunction(['Alf', 'Alice', 'Ben']))
+// console.log(myFunction(['Alf', 'Alice', 'Ben']))
 
 
-function myFunction(arr,num) {
-  return [...(num > 5 ? [num] : [0]), ...arr];
-}
+// function myFunction(arr) {
+//  return arr.reduce((acc, cur) => {
+//   const firstLetter = cur.toLowerCase().charAt(0);
+//   return { ...acc, [firstLetter]: [...(acc[firstLetter] || []), cur] };
+//  }, {});
+// }
+
+// console.log(myFunction(['Alf', 'Alice', 'Ben']))
 
 
-console.log(myFunction([1,2,3], 6))
+// function myFunction(arr,num) {
+//   return [...(num > 5 ? [num] : [0]), ...arr];
+// }
+
+
+// console.log(myFunction([1,2,3], 6))
 
 // function myFunction(a,n) {
  
@@ -2248,132 +2248,132 @@ console.log(myFunction([1,2,3], 6))
 
 
 
-function myFunction(a, n) {
-   let rest = [...a];
+// function myFunction(a, n) {
+//   let rest = [...a];
  
-   let result = [];
-   for (let i = 0; i < a.length; i++) {
-      if (rest.length < n) break;
-      result.push(rest[n - 1]);
-      rest = rest.slice(n);
-        console.log(rest)
-   }
-   return result;
-}
+//   let result = [];
+//   for (let i = 0; i < a.length; i++) {
+//       if (rest.length < n) break;
+//       result.push(rest[n - 1]);
+//       rest = rest.slice(n);
+//         console.log(rest)
+//   }
+//   return result;
+// }
 
 
-console.log(myFunction([10,9,8,7,6,5,4,3,2,1],5))
+// console.log(myFunction([10,9,8,7,6,5,4,3,2,1],5))
 
 
-function myFunction(a,b) {
-return b in a;  
-}
+// function myFunction(a,b) {
+// return b in a;  
+// }
 
 
-console.log(myFunction({x:'a',y:'b',z:'c'},'z'))
+// console.log(myFunction({x:'a',y:'b',z:'c'},'z'))
 
 
-const hero = {
-  name: 'Batman'
-};
-hero.hasOwnProperty('name');     // => true
-hero.hasOwnProperty('realName'); // => false
+// const hero = {
+//   name: 'Batman'
+// };
+// hero.hasOwnProperty('name');     // => true
+// hero.hasOwnProperty('realName'); // => false
 
 
-const hero = {
-  name: 'Batman'
-};
-'name' in hero;     // => true
-'realName' in hero; // => false
+// const hero = {
+//   name: 'Batman'
+// };
+// 'name' in hero;     // => true
+// 'realName' in hero; // => false
 
 
-in operator has a short syntax, and I prefer it over hasOwnProperty() method.
+// in operator has a short syntax, and I prefer it over hasOwnProperty() method.
 
-The main difference between hasOwnProperty() method and in operator is that the latter checks within own and inherited properties of the object.
+// The main difference between hasOwnProperty() method and in operator is that the latter checks within own and inherited properties of the object.
 
-That's why, in contrast to hasOwnProperty(), the in operator detects that hero object contains the inherited property toString:
+// That's why, in contrast to hasOwnProperty(), the in operator detects that hero object contains the inherited property toString:
 
-const hero = {
-  name: 'Batman'
-};
-hero.toString; // => function() {...}
-'toString' in hero;              // => true
-hero.hasOwnProperty('toString'); // => false
-
-
-
-Comparing with undefined to detect the existence of property is a cheap and dirty approach.
-
-But be aware of false-negatives. If the property exists, but has undefined value (case, however, rarely happening), comparing against undefined evaluates incorrectly to false:
-
-const hero = {
-  name: undefined
-};
-hero.name !== undefined; // => false
-
-function myFunction(a) {
-  return { key : a }
-}
-console.log(myFunction('a'))
-
-
-function myFunction(a,b) {
-return {[a] : b}
-}
-console.log(myFunction('k','b'))
-
-function myFunction(x,y) {
-   y.d = y.b
-  delete y.b
-return {...x, ...y}
-}
-
-function myFunction(x, y) {
-  const { b, ...rest } = y;
-  return { ...x, ...rest, d: b };
-}
-
-console.log(myFunction({ a: 1, b: 2 }, { c: 3, b: 4, e: 5 }))
+// const hero = {
+//   name: 'Batman'
+// };
+// hero.toString; // => function() {...}
+// 'toString' in hero;              // => true
+// hero.hasOwnProperty('toString'); // => false
 
 
 
-function myFunction(x,y) {
-   y.d = y.b
-  delete y.b
-return {...x, ...y}
-}
+// Comparing with undefined to detect the existence of property is a cheap and dirty approach.
 
-function myFunction(x, y) {
-  const { b, ...rest } = y;
-  return { ...x, ...rest, d: b };
-}
+// But be aware of false-negatives. If the property exists, but has undefined value (case, however, rarely happening), comparing against undefined evaluates incorrectly to false:
 
-console.log(myFunction({ a: 1, b: 2 }, { c: 3, b: 4, e: 5 }))
+// const hero = {
+//   name: undefined
+// };
+// hero.name !== undefined; // => false
+
+// function myFunction(a) {
+//   return { key : a }
+// }
+// console.log(myFunction('a'))
+
+
+// function myFunction(a,b) {
+// return {[a] : b}
+// }
+// console.log(myFunction('k','b'))
+
+// function myFunction(x,y) {
+//   y.d = y.b
+//   delete y.b
+// return {...x, ...y}
+// }
+
+// function myFunction(x, y) {
+//   const { b, ...rest } = y;
+//   return { ...x, ...rest, d: b };
+// }
+
+// console.log(myFunction({ a: 1, b: 2 }, { c: 3, b: 4, e: 5 }))
 
 
 
-function myFunction(obj) {
+// function myFunction(x,y) {
+//   y.d = y.b
+//   delete y.b
+// return {...x, ...y}
+// }
+
+// function myFunction(x, y) {
+//   const { b, ...rest } = y;
+//   return { ...x, ...rest, d: b };
+// }
+
+// console.log(myFunction({ a: 1, b: 2 }, { c: 3, b: 4, e: 5 }))
+
+
+
+// function myFunction(obj) {
     
-//   return Object.keys(obj).reduce((acc, key) => {acc[key] = obj[key].trim() === '' ? null : 
-//   obj[key]; return acc; }, {})
+// //   return Object.keys(obj).reduce((acc, key) => {acc[key] = obj[key].trim() === '' ? null : 
+// //   obj[key]; return acc; }, {})
     
- Object.keys(obj).forEach(key => {
-  if (obj[key].trim() === '') {
-  obj[key]= null;
-  }
-});
-return obj
-}
+//  Object.keys(obj).forEach(key => {
+//   if (obj[key].trim() === '') {
+//   obj[key]= null;
+//   }
+// });
+// return obj
+// }
 
-console.log(myFunction({ a: 'a', b: 'b ', c: ' ', d: '' }))
+// console.log(myFunction({ a: 'a', b: 'b ', c: ' ', d: '' }))
 
 
-function myFunction(obj) {
-  const newObj = { ...obj };
-  for (key in newObj) {
-    if (newObj[key].trim() === '') newObj[key] = null;
-  }
-  return newObj;
+// function myFunction(obj) {
+//   const newObj = { ...obj };
+//   for (key in newObj) {
+//     if (newObj[key].trim() === '') newObj[key] = null;
+//   }
+//   return newObj;
 
 // function myFunction(a, n) {
 //   return a[n - 1];
@@ -2425,26 +2425,26 @@ function myFunction(obj) {
 //  console.log(myFunction('m', 'how many times does the character occur in this sentence?'))
 
 
-function myFunction(a) {
- return a.toFixed(2)
-}
+// function myFunction(a) {
+//  return a.toFixed(2)
+// }
 
 
 
-console.log(myFunction(26.1379))
+// console.log(myFunction(26.1379))
 
 
 
-function myFunction(a) {
+// function myFunction(a) {
    
-  return String(a).split('').map(Number)
+//   return String(a).split('').map(Number)
  
-}
+// }
 
-console.log(myFunction(10))
+// console.log(myFunction(10))
 
 
-https://justacoding.blog/javascript-exercises-for-beginners-part-1-strings/
+// https://justacoding.blog/javascript-exercises-for-beginners-part-1-strings/
 
 // const findDuplicates = (someString, repeatTimes) => {
 //     const counts = {};
@@ -2498,74 +2498,74 @@ https://justacoding.blog/javascript-exercises-for-beginners-part-1-strings/
 // console.log(findDuplicates("tfghhhplffzaaa", 3)) // [h, a]
 
 
-const sortString = (someString, reverseOrder) => {
-    const a = [...someString]
-for(let i=0; i<a.length;i++){
-for(let j=i; j < a.length; j++){
-     if(a[i] > a[j]){
-        let temp = a[i]
-        a[i]=a[j]
-        a[j]=temp
+// const sortString = (someString, reverseOrder) => {
+//     const a = [...someString]
+// for(let i=0; i<a.length;i++){
+// for(let j=i; j < a.length; j++){
+//      if(a[i] > a[j]){
+//         let temp = a[i]
+//         a[i]=a[j]
+//         a[j]=temp
         
-    }  
-}
-}
+//     }  
+// }
+// }
     
-if(reverseOrder){
-return a.reverse().join("")
-}
-return a.join("")
-}
+// if(reverseOrder){
+// return a.reverse().join("")
+// }
+// return a.join("")
+// }
 
-console.log(sortString([1,2,7,1,-4,0,9,-29], false)) // "abcd"
-console.log(sortString("axedzpq", true)) // "zxqpeda"
-
-
+// console.log(sortString([1,2,7,1,-4,0,9,-29], false)) // "abcd"
+// console.log(sortString("axedzpq", true)) // "zxqpeda"
 
 
-const sortString = (someString, reverseOrder) => {
-    const a = [...someString]
-for(let i=0; i<a.length;i++){
-     if(a[i] > a[i+1]){
-        let temp = a[i]
-        a[i]=a[i+1]
-        a[i+1]=temp
-        i=-1
-    }  
-}
+
+
+// const sortString = (someString, reverseOrder) => {
+//     const a = [...someString]
+// for(let i=0; i<a.length;i++){
+//      if(a[i] > a[i+1]){
+//         let temp = a[i]
+//         a[i]=a[i+1]
+//         a[i+1]=temp
+//         i=-1
+//     }  
+// }
     
-if(reverseOrder){
-return a.reverse().join("")
-}
-return a.join("")
-}
+// if(reverseOrder){
+// return a.reverse().join("")
+// }
+// return a.join("")
+// }
 
-console.log(sortString([1,2,7,1,-4,0,9,-29], false)) // "abcd"
-console.log(sortString("axedzpq", true)) // "zxqpeda"
+// console.log(sortString([1,2,7,1,-4,0,9,-29], false)) // "abcd"
+// console.log(sortString("axedzpq", true)) // "zxqpeda"
 
 
 
-const isOrderedAlphabetically = (someString, reverseOrder) => {
-  const a = [...someString]
-  for(let i=0; i<a.length; i++){
-      if(a[i] > a[i+1]){
-      let temp = a[i]
-      a[i]= a[i+1]
-      a[i+1]= temp
+// const isOrderedAlphabetically = (someString, reverseOrder) => {
+//   const a = [...someString]
+//   for(let i=0; i<a.length; i++){
+//       if(a[i] > a[i+1]){
+//       let temp = a[i]
+//       a[i]= a[i+1]
+//       a[i+1]= temp
       
-      i = -1
-      }
-  }
-  if(reverseOrder){
-      return a.join("") === [...someString].reverse().join("")
-  }
-  return a.join("") === [...someString].join("")
-}
+//       i = -1
+//       }
+//   }
+//   if(reverseOrder){
+//       return a.join("") === [...someString].reverse().join("")
+//   }
+//   return a.join("") === [...someString].join("")
+// }
 
-console.log(isOrderedAlphabetically("abbcddeikl", false)) // true
-console.log(isOrderedAlphabetically("abbcddeikl", true)) // false
-console.log(isOrderedAlphabetically("jheca", true)) // true
-console.log(isOrderedAlphabetically("jheca", false)) // false
+// console.log(isOrderedAlphabetically("abbcddeikl", false)) // true
+// console.log(isOrderedAlphabetically("abbcddeikl", true)) // false
+// console.log(isOrderedAlphabetically("jheca", true)) // true
+// console.log(isOrderedAlphabetically("jheca", false)) // false
 
 
 
@@ -2592,29 +2592,26 @@ console.log(isOrderedAlphabetically("jheca", false)) // false
 // console.log(sortString("axedzpq", true)) // "zxqpeda"
 
 
-const mix = (firstArray, secondArray) => {
-    let array = []
-  let greaterArray = []
-  let smallerArray = []
+// const mix = (firstArray, secondArray) => {
+//     let array = []
+//   let greaterArray = []
+//   let smallerArray = []
    
-  firstArray.length>secondArray.length ? greaterArray =firstArray : greaterArray = secondArray
+//   firstArray.length>secondArray.length ? greaterArray =firstArray : greaterArray = secondArray
  
 
-if(greaterArray.length){
-      for(let i=0; i<greaterArray.length; i++){
-      if(firstArray[i] && secondArray[i]){
+// if(greaterArray.length){
+//       for(let i=0; i<greaterArray.length; i++){
+//       if(firstArray[i] && secondArray[i]){
         
-     array.push(firstArray[i],secondArray[i])
-      }else{
-              array.push(greaterArray[i]) 
-      }
- }
-}
- return array
-}
-
-
-
+//      array.push(firstArray[i],secondArray[i])
+//       }else{
+//               array.push(greaterArray[i]) 
+//       }
+//  }
+// }
+//  return array
+// }
 
 // const array1 = ["a", "b", "c", "d"];
 // const array2 = [1, 2];
@@ -2623,8 +2620,7 @@ if(greaterArray.length){
 
 // console.log(mergeArrays(array1, array2)); // ["a",1 ,"b", 2, "c", "d"]
 
-console.log(mix([1, 2, 3], [4, 5, 6])) 
-// [1, 4, 2, 5, 3, 6]
-console.log(mix(["h", "a", "c","g","k","q"], [7, 4, 17, 10, 48])) 
+// console.log(mix([1, 2, 3], [4, 5, 6])) 
+// // [1, 4, 2, 5, 3, 6]
+// console.log(mix(["h", "a", "c","g","k","q"], [7, 4, 17, 10, 48])) 
 // ["h", 7, "a", 4, "c", 17, 10, 48]
-
